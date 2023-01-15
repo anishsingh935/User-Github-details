@@ -11,8 +11,9 @@ Installing
 - Clone the repository
 - Navigate to the project directory: cd frontend/backend
 - Install the dependencies: npm install
-Start the development server: npm start [Fronted]
-Start the development server: npm run dev [backend]
+- Start the development server: npm start [Fronted]
+- Start the development server: npm run dev [backend]
+
 Running the tests
 npm test
 
