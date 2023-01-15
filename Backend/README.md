@@ -1,5 +1,5 @@
 Please add token in backend file to run the project.
-Path to add token:- backend->serverless.yml-> line no 23 [  GITHUB_ACCESS_TOKEN: 'Bearer <your access_token>' ]
+Path to add token:- backend->serverless.yml-> line no 23 [  GITHUB_ACCESS_TOKEN: 'Bearer your access_token' ]
 
 
 To get a GitHub access token, you can follow these steps:
