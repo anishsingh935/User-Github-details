@@ -20,7 +20,7 @@ provider:
   lambdaHashingVersion: 20201221 # https://www.serverless.com/framework/docs/deprecations/#LAMBDA_HASHING_VERSION_V2
   
   environment:
-    GITHUB_ACCESS_TOKEN: 'Bearer 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'
+    GITHUB_ACCESS_TOKEN: 'Bearer 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'
   iam:
     role: 
       statements:      
