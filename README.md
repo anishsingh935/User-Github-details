@@ -6,7 +6,6 @@ These instructions will get you a copy of the project up and running on your loc
 Prerequisites
 - Node.js: - Download and install
 - npm: - Installed with Node.js
-- React.js: - Download and install
 
 Installing
 - Clone the repository
