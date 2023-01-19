@@ -2,6 +2,7 @@ import axios from 'axios';
 import { GITHUB_ACCESS_TOKEN } from '../config/config';
 import { GITHUB_BASE_URL } from '../config/constants';
 import logger from '../config/logger';
+import ApiError from '../utils/ApiError';
 
 const headers = { Authorization: GITHUB_ACCESS_TOKEN };
 
@@ -11,8 +12,8 @@ export const getUserInfo = async (userName) => {
     const response = await axios.get(`${GITHUB_BASE_URL}/users/${userName}`, { headers });
     return response.data;
   } catch (err) {
-    logger.error('Error while fetching user info', err.message);
-    throw err;
+    logger.error('Error while fetching user info', { status: err.response.status, message: err.message });
+    throw new ApiError(err.response.status, err.message);
   }
 };
 
@@ -30,7 +31,7 @@ export const getRepos = async (query) => {
     const response = await axios.get(`${GITHUB_BASE_URL}/users/${userName}/repos`, { params, headers });
     return response.data;
   } catch (err) {
-    logger.error('Error while fetching user info', err.message);
-    throw err;
+    logger.error('Error while fetching user info', { status: err.response.status, message: err.message });
+    throw new ApiError(err.response.status, err.message);
   }
 };
